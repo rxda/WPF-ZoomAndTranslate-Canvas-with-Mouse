@@ -1,0 +1,18 @@
+﻿<Window x:Class="Canvas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Canvas"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Canvas x:Name="cl"  MouseWheel="canvas_MouseWheel" MouseMove="canvas_MouseMove" Background="AliceBlue">
+            
+            <Canvas.RenderTransform>
+                <MatrixTransform />
+            </Canvas.RenderTransform>
+            <Ellipse Fill="#FFF4F4F5" Height="100" Canvas.Left="151" Stroke="Black" Canvas.Top="88" Width="100"/>
+        </Canvas>
+    </Grid>
+</Window>
